@@ -12,6 +12,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '~> 4.0'
 gem 'middleman-sprockets', '~> 4.1.0'
 gem 'middleman-syntax', '~> 3.0.0'
+gem 'middleman-deploy', '~> 1.0'
 
 # Markdown parser:
 gem 'redcarpet', '~> 3.4.0'

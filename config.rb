@@ -28,6 +28,12 @@ collection :patterns, patterns
 # Page options, layouts, aliases and proxies
 ###
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
+
 # Per-page layout changes:
 #
 # With no layout
