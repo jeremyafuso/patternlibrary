@@ -3103,7 +3103,7 @@ input[type="submit"].button {
   -ms-flex-align: center;
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 290486px;
+  border-radius: 3px;
   color: #4a4a4a;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
