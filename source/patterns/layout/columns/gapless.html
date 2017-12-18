@@ -1,9 +1,24 @@
 ---
-title: Gap
+title: Gapless
 description: Each column has a gap equal to the variable $column-gap, which has a default value of 0.75rem. Since the gap is on each side of a column, the gap between two adjacent columns will be twice the value of $column-gap, or 1.5rem by default.
 ---
 
 <div class="columns is-gapless">
+    <div class="column">
+        <p class="notification is-info has-text-centered">First column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Second column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Third column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Fourth column</p>
+    </div>
+</div>
+
+<div class="columns is-variable bd-klmn-columns is-1-desktop">
     <div class="column">
         <p class="notification is-info has-text-centered">First column</p>
     </div>
