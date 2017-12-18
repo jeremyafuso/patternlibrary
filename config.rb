@@ -30,6 +30,7 @@ collection :patterns, patterns
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
+end
 
 # Per-page layout changes:
 #
