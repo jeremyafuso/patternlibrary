@@ -29,10 +29,7 @@ collection :patterns, patterns
 ###
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
-end
+  deploy.deploy_method = :git
 
 # Per-page layout changes:
 #
