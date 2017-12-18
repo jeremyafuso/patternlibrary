@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>Pattern Library | Overview</title>
+  <link href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="/stylesheets/mpl/application.css" rel="stylesheet" />
+  <link href="/images/favicon.png" rel="icon" type="image/png" />
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+              mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Overview</span>
+      </div>
+      
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <span class="mdl-navigation__link mpl-navigation__title">
+          Introduction
+        </span>
+        <a href="/" class="mdl-navigation__link">Overview</a>
+        <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Components
+          </span>
+            <a href="/patterns/components/alerts.html" class="mdl-navigation__link" data-title="Alerts">Alerts</a>
+            <a href="/patterns/components/cards.html" class="mdl-navigation__link" data-title="Cards">Cards</a>
+            <a href="/patterns/components/progress.html" class="mdl-navigation__link" data-title="Progress">Progress</a>
+            <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Elements
+          </span>
+            <a href="/patterns/elements/buttons.html" class="mdl-navigation__link" data-title="Buttons">Buttons</a>
+            <a href="/patterns/elements/colors.html" class="mdl-navigation__link" data-title="Colors">Colors</a>
+            <a href="/patterns/elements/typography.html" class="mdl-navigation__link" data-title="Typography">Typography</a>
+            <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Layout
+          </span>
+            <a href="/patterns/layout/columns.html" class="mdl-navigation__link" data-title="Columns">Columns</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="mpl-layout__content">
+        <p><center>
+  <img src="/images/favicon.png" alt="Icon" />
+</center></p>
+
+<p><center>
+  <a href="https://github.com/danielbayerlein/middleman-pattern-library" rel="nofollow"><strong>middleman-pattern-library</strong></a>
+  is a <a href="http://middlemanapp.com" rel="nofollow">Middleman 4.x</a> project template for creating
+  and managing your front-end pattern library.
+</center></p>
+
+<hr>
+
+<h3>Introduction</h3>
+
+<h4>Folder structure</h4>
+
+<p>Your patterns are located in the <code>source/patterns</code> folder.</p>
+
+<p><strong>For example:</strong></p>
+<div class="highlight"><pre class="highlight plaintext"><code>source/patterns/
+  components/
+    alerts/
+      default.html
+      link-color.html
+    progress/
+      contextual-alternatives.html
+        default.html
+        striped.html
+  elements/
+    buttons/
+      default.html
+      disabled.html
+      outline.html
+      sizes.html
+    colors/
+      color-palette.html
+    typography/
+      blockquotes.html
+      customizing-headings.html
+      headings.html
+      inline-text-elements.html
+      lead.html
+</code></pre></div>
+<p><strong>Explanation:</strong></p>
+<div class="highlight"><pre class="highlight plaintext"><code>elements/         &lt;= Category
+  typography/     &lt;= Subcategory
+    headings.html &lt;= Pattern
+</code></pre></div>
+<h4>Pattern format</h4>
+
+<p>Each pattern has a <code>title</code>. The <code>description</code>, <code>show_code</code> and <code>use_source</code> is
+optional.</p>
+
+<p><strong>For example <code>headings.html</code>:</strong></p>
+<div class="highlight"><pre class="highlight html"><code>---
+title: Headings
+description: All HTML headings, <span class="ni">&amp;lt;</span>h1<span class="ni">&amp;gt;</span> through <span class="ni">&amp;lt;</span>h6<span class="ni">&amp;gt;</span>, are available. .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.
+---
+
+<span class="nt">&lt;h1&gt;</span>Heading 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Heading 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Heading 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Heading 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Heading 5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Heading 6<span class="nt">&lt;/h6&gt;</span>
+</code></pre></div>
+<h4>Frontmatter</h4>
+
+<p>Frontmatter allows page-specific variables to be included at the top of a
+template using the JSON format.</p>
+
+<p><strong>For example:</strong></p>
+<div class="highlight"><pre class="highlight plaintext"><code>---
+title: Lorem ipsum
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+iusmod tempor incididunt ut labore et dolore magna aliqua.
+show_code: false
+use_source: false
+---
+</code></pre></div>
+<p><strong>title:</strong> The title of the page.</p>
+
+<p><strong>description:</strong> The description of the page.</p>
+
+<p><strong>show_code:</strong> If you set the value to <code>false</code>, the code is not displayed.</p>
+
+<p><strong>use_source:</strong> If you set the value to <code>false</code>, your CSS will not load.</p>
+
+<h4>Assets</h4>
+
+<p>Your JS is located at <code>source/javascripts/</code></p>
+<div class="highlight"><pre class="highlight plaintext"><code>source/javascripts
+  mpl/    &lt;= JS for the middleman-pattern-library
+  base.js &lt;= JS for your patterns
+</code></pre></div>
+<p>and your CSS is located at <code>source/stylesheets/</code></p>
+<div class="highlight"><pre class="highlight plaintext"><code>source/stylesheets/
+  mpl/      &lt;= CSS for the middleman-pattern-library
+  base.css  &lt;= CSS for your patterns, you can also use Sass.
+</code></pre></div>
+<h3>Building the site with <code>middleman build</code></h3>
+
+<p>Finally, when you are ready to deliver static code, you will need to build the
+site. Using the command-line, from the project folder, run <code>middleman build</code>:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span><span class="nb">cd </span>my_pattern_library
+<span class="nv">$ </span>bundle <span class="nb">exec </span>middleman build
+</code></pre></div>
+<p>This will create a static file for each file located in your source folder.</p>
+
+<h3>OMG, I don&rsquo;t know what I should do!</h3>
+
+<p>For help, see the official <a href="http://middlemanapp.com" rel="nofollow">Middleman</a> website.
+No success? Then create an <a href="https://github.com/danielbayerlein/middleman-pattern-library/issues/new" rel="nofollow">Issue</a>.</p>
+
+<h3>License</h3>
+
+<p><a href="https://github.com/danielbayerlein/middleman-pattern-library" rel="nofollow"><strong>middleman-pattern-library</strong></a>
+is free and open source! The code is licensed under
+<a href="https://github.com/danielbayerlein/middleman-pattern-library/blob/master/LICENSE.md" rel="nofollow">MIT</a>.</p>
+
+      </div>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="/javascripts/mpl/application.js"></script>
+</body>
+</html>

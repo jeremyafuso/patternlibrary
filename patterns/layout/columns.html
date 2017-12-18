@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>Pattern Library | Columns</title>
+  <link href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="/stylesheets/mpl/application.css" rel="stylesheet" />
+  <link href="/images/favicon.png" rel="icon" type="image/png" />
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+              mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Columns</span>
+      </div>
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#tab-basics"
+           class="mdl-layout__tab is-active">
+          Basics
+        </a>
+        <a href="#tab-variable-gap"
+           class="mdl-layout__tab">
+          Variable Gap
+        </a>
+        <a href="#tab-gap"
+           class="mdl-layout__tab">
+          Gap
+        </a>
+        <a href="#tab-sizes"
+           class="mdl-layout__tab">
+          Sizes
+        </a>
+    </div>
+
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <span class="mdl-navigation__link mpl-navigation__title">
+          Introduction
+        </span>
+        <a href="/" class="mdl-navigation__link">Overview</a>
+        <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Components
+          </span>
+            <a href="/patterns/components/alerts.html" class="mdl-navigation__link" data-title="Alerts">Alerts</a>
+            <a href="/patterns/components/cards.html" class="mdl-navigation__link" data-title="Cards">Cards</a>
+            <a href="/patterns/components/progress.html" class="mdl-navigation__link" data-title="Progress">Progress</a>
+            <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Elements
+          </span>
+            <a href="/patterns/elements/buttons.html" class="mdl-navigation__link" data-title="Buttons">Buttons</a>
+            <a href="/patterns/elements/colors.html" class="mdl-navigation__link" data-title="Colors">Colors</a>
+            <a href="/patterns/elements/typography.html" class="mdl-navigation__link" data-title="Typography">Typography</a>
+            <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Layout
+          </span>
+            <a href="/patterns/layout/columns.html" class="mdl-navigation__link" data-title="Columns">Columns</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="mpl-layout__content">
+        
+  <section class="mdl-layout__tab-panel is-active"
+           id="tab-basics">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Basics
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Each column will have an equal width, no matter the number of columns.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="columns">
+    <div class="column">
+        <p class="notification is-info has-text-centered">First column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Second column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Third column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Fourth column</p>
+    </div>
+</div>
+                <link href="/stylesheets/base.css" rel="stylesheet" />
+                <script src="/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>First column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>Second column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>Third column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>Fourth column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-variable-gap">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Variable Gap
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            You can specify a custom column gap by appending one of 9 modifiers on the .columns container.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                
+<div id="klmn" class="bd-klmn">
+
+    <div class="bd-klmn-lead">
+        <div class="columns is-variable bd-klmn-columns is-1">
+            <div class="column is-3">
+                <div class="notification is-info has-text-centered">
+                    Side
+                </div>
+            </div>
+            <div class="column is-9">
+                <div class="notification is-info has-text-centered">
+                    Main
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-variable bd-klmn-columns is-1">
+            <div class="column is-4">
+                <div class="notification is-info has-text-centered">
+                    Three columns
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="notification is-info has-text-centered">
+                    Three columns
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="notification is-info has-text-centered">
+                    Three columns
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-variable bd-klmn-columns is-1">
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    1
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    2
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    3
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    4
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    5
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    6
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    7
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    8
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    9
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    10
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    11
+                </div>
+            </div>
+            <div class="column">
+                <div class="notification is-info has-text-centered">
+                    12
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <link href="/stylesheets/base.css" rel="stylesheet" />
+                <script src="/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"klmn"</span> <span class="na">class=</span><span class="s">"bd-klmn"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd-klmn-lead"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns is-variable bd-klmn-columns is-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    Side
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-9"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    Main
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns is-variable bd-klmn-columns is-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    Three columns
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    Three columns
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    Three columns
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns is-variable bd-klmn-columns is-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    1
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    2
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    3
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    4
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    5
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    6
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    7
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    8
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    9
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    10
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    11
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>
+                    12
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-gap">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Gap
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Each column has a gap equal to the variable $column-gap, which has a default value of 0.75rem. Since the gap is on each side of a column, the gap between two adjacent columns will be twice the value of $column-gap, or 1.5rem by default.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="columns is-gapless">
+    <div class="column">
+        <p class="notification is-info has-text-centered">First column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Second column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Third column</p>
+    </div>
+    <div class="column">
+        <p class="notification is-info has-text-centered">Fourth column</p>
+    </div>
+</div>
+                <link href="/stylesheets/base.css" rel="stylesheet" />
+                <script src="/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns is-gapless"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>First column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>Second column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>Third column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info has-text-centered"</span><span class="nt">&gt;</span>Fourth column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-sizes">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Sizes
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            The other columns will fill up the remaining space automatically.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="columns">
+    <div class="column is-three-quarters">
+        <p class="notification is-info">
+            <code class="html">is-three-quarters</code>
+        </p>
+    </div>
+    <div class="column">
+        <p class="notification is-warning">Auto</p>
+    </div>
+    <div class="column">
+        <p class="notification is-danger">Auto</p>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column is-two-thirds">
+        <p class="notification is-info">
+            <code class="html">is-two-thirds</code>
+        </p>
+    </div>
+    <div class="column">
+        <p class="notification is-warning">Auto</p>
+    </div>
+    <div class="column">
+        <p class="notification is-danger">Auto</p>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column is-half">
+        <p class="notification is-info">
+            <code class="html">is-half</code>
+        </p>
+    </div>
+    <div class="column">
+        <p class="notification is-warning">Auto</p>
+    </div>
+    <div class="column">
+        <p class="notification is-danger">Auto</p>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column is-one-third">
+        <p class="notification is-info">
+            <code class="html">is-one-third</code>
+        </p>
+    </div>
+    <div class="column">
+        <p class="notification is-success">Auto</p>
+    </div>
+    <div class="column">
+        <p class="notification is-warning">Auto</p>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column is-one-quarter">
+        <p class="notification is-info">
+            <code class="html">is-one-quarter</code>
+        </p>
+    </div>
+    <div class="column">
+        <p class="notification is-success">Auto</p>
+    </div>
+</div>
+                <link href="/stylesheets/base.css" rel="stylesheet" />
+                <script src="/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-three-quarters"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>is-three-quarters<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-warning"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-danger"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-two-thirds"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>is-two-thirds<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-warning"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-danger"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-half"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>is-half<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-warning"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-danger"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-one-third"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>is-one-third<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-success"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-warning"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-one-quarter"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"html"</span><span class="nt">&gt;</span>is-one-quarter<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification is-success"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      </div>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="/javascripts/mpl/application.js"></script>
+</body>
+</html>
