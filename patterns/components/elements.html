@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>Pattern Library | Elements</title>
+  <link href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="/patternlibrary/stylesheets/mpl/application.css" rel="stylesheet" />
+  <link href="/patternlibrary/images/images/favicon.png" rel="icon" type="image/png" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+              mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Elements</span>
+      </div>
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#tab-buttons"
+           class="mdl-layout__tab is-active">
+          Buttons
+        </a>
+        <a href="#tab-colors"
+           class="mdl-layout__tab">
+          Colors
+        </a>
+        <a href="#tab-content"
+           class="mdl-layout__tab">
+          Content
+        </a>
+        <a href="#tab-delete-buttons"
+           class="mdl-layout__tab">
+          Delete Buttons
+        </a>
+        <a href="#tab-images"
+           class="mdl-layout__tab">
+          Images
+        </a>
+        <a href="#tab-notifications"
+           class="mdl-layout__tab">
+          Notifications
+        </a>
+        <a href="#tab-progress-bar"
+           class="mdl-layout__tab">
+          Progress Bar
+        </a>
+        <a href="#tab-tables"
+           class="mdl-layout__tab">
+          Tables
+        </a>
+        <a href="#tab-tags"
+           class="mdl-layout__tab">
+          Tags
+        </a>
+        <a href="#tab-titles"
+           class="mdl-layout__tab">
+          Titles
+        </a>
+    </div>
+
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <span class="mdl-navigation__link mpl-navigation__title">
+          Introduction
+        </span>
+        <a href="/patternlibrary/" class="mdl-navigation__link">Overview</a>
+        <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Components
+          </span>
+            <a href="/patternlibrary/patterns/components/cards.html" class="mdl-navigation__link" data-title="Cards">Cards</a>
+            <a href="/patternlibrary/patterns/components/elements.html" class="mdl-navigation__link" data-title="Elements">Elements</a>
+            <a href="/patternlibrary/patterns/components/forms.html" class="mdl-navigation__link" data-title="Forms">Forms</a>
+            <a href="/patternlibrary/patterns/components/typography.html" class="mdl-navigation__link" data-title="Typography">Typography</a>
+            <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Layout
+          </span>
+            <a href="/patternlibrary/patterns/layout/columns.html" class="mdl-navigation__link" data-title="Columns">Columns</a>
+            <a href="/patternlibrary/patterns/layout/content.html" class="mdl-navigation__link" data-title="Content">Content</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="mpl-layout__content">
+        
+  <section class="mdl-layout__tab-panel is-active"
+           id="tab-buttons">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Buttons
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            The button is an essential element of any design. It's meant to look and behave as an interactive element of your page.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <h4>Basic</h4><br>
+<a class="button">Anchor</a>
+<button class="button">Button</button>
+<input class="button" type="submit" value="Submit input">
+<input class="button" type="reset" value="Reset input">
+<hr>
+<h4>Colors</h4><br>
+<a class="button is-white">White</a>
+<a class="button is-light">Light</a>
+<a class="button is-dark">Dark</a>
+<a class="button is-black">Black</a>
+<a class="button is-text">Text</a>
+<hr>
+<h4>Action</h4><br>
+<a class="button is-primary">Primary</a>
+<a class="button is-link">Link</a>
+<a class="button is-info">Info</a>
+<a class="button is-success">Success</a>
+<a class="button is-warning">Warning</a>
+<a class="button is-danger">Danger</a>
+<hr>
+<h4>Sizes</h4><br>
+<a class="button is-small">Small</a>
+<a class="button">Normal</a>
+<a class="button is-medium">Medium</a>
+<a class="button is-large">Large</a>
+<hr>
+<h4>Outlined</h4><br>
+<a class="button is-outlined">Outlined</a>
+<a class="button is-primary is-outlined">Outlined</a>
+<a class="button is-link is-outlined">Outlined</a>
+<a class="button is-info is-outlined">Outlined</a>
+<a class="button is-success is-outlined">Outlined</a>
+<a class="button is-danger is-outlined">Outlined</a>
+<hr>
+
+<h4>Inverted</h4><br>
+<a class="button is-primary is-inverted">Inverted</a>
+<a class="button is-link is-inverted">Inverted</a>
+<a class="button is-info is-inverted">Inverted</a>
+<a class="button is-success is-inverted">Inverted</a>
+<a class="button is-danger is-inverted">Inverted</a>
+
+<hr>
+<h4>Inverted Outlined</h4><br>
+<a class="button is-primary is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-link is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-info is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-success is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-danger is-inverted is-outlined">Invert Outlined</a>
+
+<hr>
+<a class="button is-primary">Normal</a>
+<a class="button is-primary is-hovered">Hover</a>
+<a class="button is-primary is-focused">Focus</a>
+<a class="button is-primary is-active">Active</a>
+<a class="button is-primary is-loading">Loading</a>
+<a class="button is-primary" title="Disabled button" disabled>Disabled</a>
+<a class="button is-primary">
+  <span class="icon">
+    <i class="fa fa-twitter"></i>
+  </span>
+  <span>Twitter</span>
+</a>
+
+<hr>
+
+<div class="field has-addons">
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fa fa-align-left"></i>
+      </span>
+      <span>Left</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fa fa-align-center"></i>
+      </span>
+      <span>Center</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fa fa-align-right"></i>
+      </span>
+      <span>Right</span>
+    </a>
+  </p>
+</div>
+
+<hr>
+
+<div class="buttons">
+  <span class="button">One</span>
+  <span class="button">Two</span>
+  <span class="button">Three</span>
+  <span class="button">Four</span>
+  <span class="button">Five</span>
+  <span class="button">Six</span>
+  <span class="button">Seven</span>
+  <span class="button">Eight</span>
+  <span class="button">Nine</span>
+  <span class="button">Ten</span>
+  <span class="button">Eleven</span>
+  <span class="button">Twelve</span>
+  <span class="button">Thirteen</span>
+  <span class="button">Fourteen</span>
+  <span class="button">Fifteen</span>
+  <span class="button">Sixteen</span>
+  <span class="button">Seventeen</span>
+  <span class="button">Eighteen</span>
+  <span class="button">Nineteen</span>
+  <span class="button">Twenty</span>
+</div>
+
+
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;h4&gt;</span>Basic<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Anchor<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Colors<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-white"</span><span class="nt">&gt;</span>White<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-black"</span><span class="nt">&gt;</span>Black<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-text"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Action<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Sizes<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-small"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Outlined<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;h4&gt;</span>Inverted<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Inverted Outlined<span class="nt">&lt;/h4&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span&gt;</span>Twitter<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-align-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Left<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-align-center"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Center<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-align-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Right<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Five<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Six<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Seven<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Eight<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Nine<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Ten<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Eleven<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Twelve<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Thirteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Fourteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Fifteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Sixteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Seventeen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Eighteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Nineteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Twenty<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-colors">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Colors
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <h4>Bulma standards</h4>
+<div class="mpl-color-palette">
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: white;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">White</h2>
+    </div>
+    <div class="mdl-card__menu">$white</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: black;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Black</h2>
+    </div>
+    <div class="mdl-card__menu">$black</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp success" style="background-color: $success;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Light Gray</h2>
+    </div>
+    <div class="mdl-card__menu">white-ter</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #673AB7;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Deep Purple</h2>
+    </div>
+    <div class="mdl-card__menu">#673AB7</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #3F51B5;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Indigo</h2>
+    </div>
+    <div class="mdl-card__menu">#3F51B5</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #2196F3;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Blue</h2>
+    </div>
+    <div class="mdl-card__menu">#2196F3</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #03A9F4;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Light Blue</h2>
+    </div>
+    <div class="mdl-card__menu">#03A9F4</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #00BCD4;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Cyan</h2>
+    </div>
+    <div class="mdl-card__menu">#00BCD4</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #009688;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Teal</h2>
+    </div>
+    <div class="mdl-card__menu">#009688</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #4CAF50;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Green</h2>
+    </div>
+    <div class="mdl-card__menu">#4CAF50</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #8BC34A;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Light Green</h2>
+    </div>
+    <div class="mdl-card__menu">#8BC34A</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #CDDC39;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Lime</h2>
+    </div>
+    <div class="mdl-card__menu">#CDDC39</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #FFEB3B;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Yellow</h2>
+    </div>
+    <div class="mdl-card__menu">#FFEB3B</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #FFC107;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Amber</h2>
+    </div>
+    <div class="mdl-card__menu">#FFC107</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #FF9800;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Orange</h2>
+    </div>
+    <div class="mdl-card__menu">#FF9800</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #FF5722;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Deep Orange</h2>
+    </div>
+    <div class="mdl-card__menu">#FF5722</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #795548;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Brown</h2>
+    </div>
+    <div class="mdl-card__menu">#795548</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #9E9E9E;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Grey</h2>
+    </div>
+    <div class="mdl-card__menu">#9E9E9E</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #607D8B;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Blue Grey</h2>
+    </div>
+    <div class="mdl-card__menu">#607D8B</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #000000;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">Black</h2>
+    </div>
+    <div class="mdl-card__menu">#000000</div>
+  </div>
+
+  <div class="mdl-card mdl-shadow--2dp" style="background-color: #FFFFFF;">
+    <div class="mdl-card__title mdl-card--expand">
+      <h2 class="mdl-card__title-text">White</h2>
+    </div>
+    <div class="mdl-card__menu">#FFFFFF</div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-content">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Content
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            This content class can be used in any context where you just want to (or can only) write some text. For example, it's used for the paragraph you're currently reading.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="content notification">
+  <h1>Hello World</h1>
+  <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+  <h2>Second level</h2>
+  <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+  <ul>
+    <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+    <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+    <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+    <li>Ut non enim metus.</li>
+  </ul>
+  <h3>Third level</h3>
+  <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+  <ol>
+    <li>Donec blandit a lorem id convallis.</li>
+    <li>Cras gravida arcu at diam gravida gravida.</li>
+    <li>Integer in volutpat libero.</li>
+    <li>Donec a diam tellus.</li>
+    <li>Aenean nec tortor orci.</li>
+    <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
+    <li>Vivamus maximus ultricies pulvinar.</li>
+  </ol>
+  <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
+  <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
+  <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
+  <dl>
+    <dt>Web</dt>
+    <dd>The part of the Internet that contains websites and web pages</dd>
+    <dt>HTML</dt>
+    <dd>A markup language for creating web pages</dd>
+    <dt>CSS</dt>
+    <dd>A technology to make HTML look better</dd>
+  </dl>
+  <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
+  <h4>Fourth level</h4>
+  <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>One</th>
+        <th>Two</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Three</td>
+        <td>Four</td>
+      </tr>
+      <tr>
+        <td>Five</td>
+        <td>Six</td>
+      </tr>
+      <tr>
+        <td>Seven</td>
+        <td>Eight</td>
+      </tr>
+      <tr>
+        <td>Nine</td>
+        <td>Ten</td>
+      </tr>
+      <tr>
+        <td>Eleven</td>
+        <td>Twelve</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
+  <h5>Fifth level</h5>
+  <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
+  <figure>
+    <img src="https://bulma.io/images/placeholders/256x256.png">
+    <img src="https://bulma.io/images/placeholders/256x256.png">
+    <figcaption>
+      Figure 1: Some beautiful placeholders
+    </figcaption>
+  </figure>
+  <h6>Sixth level</h6>
+  <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
+</div>
+Copy
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum<span class="nt">&lt;sup&gt;&lt;a&gt;</span>[1]<span class="nt">&lt;/a&gt;&lt;/sup&gt;</span> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<span class="nt">&lt;sub&gt;</span>script<span class="nt">&lt;/sub&gt;</span> works as well!<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Second level<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Curabitur accumsan turpis pharetra <span class="nt">&lt;strong&gt;</span>augue tincidunt<span class="nt">&lt;/strong&gt;</span> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>In fermentum leo eu lectus mollis, quis dictum mi aliquet.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Morbi eu nulla lobortis, lobortis est in, fringilla felis.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Ut non enim metus.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Third level<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Quisque ante lacus, malesuada ac auctor vitae, congue <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>non ante<span class="nt">&lt;/a&gt;</span>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Donec blandit a lorem id convallis.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Cras gravida arcu at diam gravida gravida.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Integer in volutpat libero.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Donec a diam tellus.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Aenean nec tortor orci.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Quisque aliquam cursus urna, non bibendum massa viverra eget.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Vivamus maximus ultricies pulvinar.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;blockquote&gt;</span>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.<span class="nt">&lt;/blockquote&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <span class="nt">&lt;em&gt;</span>justo sodales<span class="nt">&lt;/em&gt;</span> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Web<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>The part of the Internet that contains websites and web pages<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>HTML<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>A markup language for creating web pages<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>CSS<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>A technology to make HTML look better<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;/dl&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Fourth level<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;pre&gt;</span>
+<span class="ni">&amp;lt;</span>!DOCTYPE html<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>html<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>head<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>title<span class="ni">&amp;gt;</span>Hello World<span class="ni">&amp;lt;</span>/title<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>/head<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>body<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>/body<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>/html<span class="ni">&amp;gt;</span>
+<span class="nt">&lt;/pre&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th&gt;</span>One<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Two<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Three<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Four<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Five<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Six<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Seven<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Eight<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Nine<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Ten<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Eleven<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Twelve<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>Fifth level<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/256x256.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/256x256.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>
+      Figure 1: Some beautiful placeholders
+    <span class="nt">&lt;/figcaption&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+  <span class="nt">&lt;h6&gt;</span>Sixth level<span class="nt">&lt;/h6&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+Copy
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-delete-buttons">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Delete Buttons
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            The .delete element is a stand-alone element that can be used in different contexts.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <a class="delete is-small"></a>
+<a class="delete"></a>
+<a class="delete is-medium"></a>
+<a class="delete is-large"></a>
+
+<hr>
+
+<div class="block">
+  <span class="tag is-success">
+    Hello World
+    <button class="delete is-small"></button>
+  </span>
+</div>
+
+<div class="notification is-danger">
+  <button class="delete"></button>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+</div>
+
+<article class="message is-info">
+  <div class="message-header">
+    Info
+    <button class="delete"></button>
+  </div>
+  <div class="message-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+  </div>
+</article>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"delete is-small"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"delete is-medium"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"delete is-large"</span><span class="nt">&gt;&lt;/a&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-success"</span><span class="nt">&gt;</span>
+    Hello World
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-small"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"message is-info"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header"</span><span class="nt">&gt;</span>
+    Info
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-body"</span><span class="nt">&gt;</span>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-images">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Images
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Because images can take a few seconds to load (or not at all), use the .image container to specify a precisely sized container so that your layout isn't broken because of image loading or image errors.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <table class="table is-bordered">
+  <tbody>
+
+    <tr>
+      <td><code>image is-16x16</code></td>
+      <td><figure class="image is-16x16"><img src="https://bulma.io/images/placeholders/16x16.png"></figure></td>
+      <td>16x16px</td>
+    </tr>
+
+    <tr>
+      <td><code>image is-24x24</code></td>
+      <td><figure class="image is-24x24"><img src="https://bulma.io/images/placeholders/24x24.png"></figure></td>
+      <td>24x24px</td>
+    </tr>
+
+    <tr>
+      <td><code>image is-32x32</code></td>
+      <td><figure class="image is-32x32"><img src="https://bulma.io/images/placeholders/32x32.png"></figure></td>
+      <td>32x32px</td>
+    </tr>
+
+    <tr>
+      <td><code>image is-48x48</code></td>
+      <td><figure class="image is-48x48"><img src="https://bulma.io/images/placeholders/48x48.png"></figure></td>
+      <td>48x48px</td>
+    </tr>
+
+    <tr>
+      <td><code>image is-64x64</code></td>
+      <td><figure class="image is-64x64"><img src="https://bulma.io/images/placeholders/64x64.png"></figure></td>
+      <td>64x64px</td>
+    </tr>
+
+    <tr>
+      <td><code>image is-96x96</code></td>
+      <td><figure class="image is-96x96"><img src="https://bulma.io/images/placeholders/96x96.png"></figure></td>
+      <td>96x96px</td>
+    </tr>
+
+    <tr>
+      <td><code>image is-128x128</code></td>
+      <td><figure class="image is-128x128"><img src="https://bulma.io/images/placeholders/128x128.png"></figure></td>
+      <td>128x128px</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<hr>
+
+<table id="images" class="table is-bordered">
+  <tbody>
+    <tr>
+      <td><code>image is-square</code></td>
+      <td><figure class="image is-square"><img src="https://bulma.io/images/placeholders/480x480.png"></figure></td>
+      <td>Square (or 1by1)</td>
+    </tr>
+    <tr>
+      <td><code>image is-1by1</code></td>
+      <td><figure class="image is-1by1"><img src="https://bulma.io/images/placeholders/480x480.png"></figure></td>
+      <td>1 by 1</td>
+    </tr>
+    <tr>
+      <td><code>image is-4by3</code></td>
+      <td><figure class="image is-4by3"><img src="https://bulma.io/images/placeholders/640x480.png"></figure></td>
+      <td>4 by 3</td>
+    </tr>
+    <tr>
+      <td><code>image is-3by2</code></td>
+      <td><figure class="image is-3by2"><img src="https://bulma.io/images/placeholders/480x320.png"></figure></td>
+      <td>3 by 2</td>
+    </tr>
+    <tr>
+      <td><code>image is-16by9</code></td>
+      <td><figure class="image is-16by9"><img src="https://bulma.io/images/placeholders/640x360.png"></figure></td>
+      <td>16 by 9</td>
+    </tr>
+    <tr>
+      <td><code>image is-2by1</code></td>
+      <td><figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure></td>
+      <td>2 by 1</td>
+    </tr>
+  </tbody>
+</table>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table is-bordered"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-16x16<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-16x16"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/16x16.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>16x16px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-24x24<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-24x24"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/24x24.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>24x24px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-32x32<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-32x32"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/32x32.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>32x32px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-48x48<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-48x48"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/48x48.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>48x48px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-64x64<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-64x64"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/64x64.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>64x64px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-96x96<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-96x96"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/96x96.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>96x96px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-128x128<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-128x128"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/128x128.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>128x128px<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"images"</span> <span class="na">class=</span><span class="s">"table is-bordered"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-square<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-square"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/480x480.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Square (or 1by1)<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-1by1<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-1by1"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/480x480.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>1 by 1<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-4by3<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-4by3"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/640x480.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>4 by 3<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-3by2<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-3by2"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/480x320.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3 by 2<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-16by9<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-16by9"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/640x360.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>16 by 9<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;code&gt;</span>image is-2by1<span class="nt">&lt;/code&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;figure</span> <span class="na">class=</span><span class="s">"image is-2by1"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/640x320.png"</span><span class="nt">&gt;&lt;/figure&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>2 by 1<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-notifications">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Notifications
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="notification is-primary">
+  <button class="delete"></button>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+</div>
+
+<div class="notification is-link">
+  <button class="delete"></button>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+</div>
+
+<div class="notification is-info">
+  <button class="delete"></button>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+</div>
+
+<div class="notification is-success">
+  <button class="delete"></button>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+</div>
+
+<div class="notification is-warning">
+  <button class="delete"></button>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+</div>
+
+<div class="notification is-danger">
+  <button class="delete"></button>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+</div>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-link"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-info"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification is-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-progress-bar">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Progress Bar
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <progress class="progress is-primary" value="15" max="100">30%</progress>
+<progress class="progress is-link" value="30" max="100">30%</progress>
+<progress class="progress is-info" value="45" max="100">45%</progress>
+<progress class="progress is-success" value="60" max="100">60%</progress>
+<progress class="progress is-warning" value="75" max="100">75%</progress>
+<progress class="progress is-danger" value="90" max="100">90%</progress>
+
+<hr>
+
+<progress class="progress is-small" value="15" max="100">15%</progress>
+<progress class="progress" value="30" max="100">30%</progress>
+<progress class="progress is-medium" value="45" max="100">45%</progress>
+<progress class="progress is-large" value="60" max="100">60%</progress>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-primary"</span> <span class="na">value=</span><span class="s">"15"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>30%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-link"</span> <span class="na">value=</span><span class="s">"30"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>30%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-info"</span> <span class="na">value=</span><span class="s">"45"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>45%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-success"</span> <span class="na">value=</span><span class="s">"60"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>60%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-warning"</span> <span class="na">value=</span><span class="s">"75"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>75%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-danger"</span> <span class="na">value=</span><span class="s">"90"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>90%<span class="nt">&lt;/progress&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-small"</span> <span class="na">value=</span><span class="s">"15"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>15%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress"</span> <span class="na">value=</span><span class="s">"30"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>30%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-medium"</span> <span class="na">value=</span><span class="s">"45"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>45%<span class="nt">&lt;/progress&gt;</span>
+<span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress is-large"</span> <span class="na">value=</span><span class="s">"60"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>60%<span class="nt">&lt;/progress&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-tables">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Tables
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <table class="table notification">
+  <thead>
+    <tr>
+      <th><abbr title="Position">Pos</abbr></th>
+      <th>Team</th>
+      <th><abbr title="Played">Pld</abbr></th>
+      <th><abbr title="Won">W</abbr></th>
+      <th><abbr title="Drawn">D</abbr></th>
+      <th><abbr title="Lost">L</abbr></th>
+      <th><abbr title="Goals for">GF</abbr></th>
+      <th><abbr title="Goals against">GA</abbr></th>
+      <th><abbr title="Goal difference">GD</abbr></th>
+      <th><abbr title="Points">Pts</abbr></th>
+      <th>Qualification or relegation</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th><abbr title="Position">Pos</abbr></th>
+      <th>Team</th>
+      <th><abbr title="Played">Pld</abbr></th>
+      <th><abbr title="Won">W</abbr></th>
+      <th><abbr title="Drawn">D</abbr></th>
+      <th><abbr title="Lost">L</abbr></th>
+      <th><abbr title="Goals for">GF</abbr></th>
+      <th><abbr title="Goals against">GA</abbr></th>
+      <th><abbr title="Goal difference">GD</abbr></th>
+      <th><abbr title="Points">Pts</abbr></th>
+      <th>Qualification or relegation</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+      </td>
+      <td>38</td>
+      <td>23</td>
+      <td>12</td>
+      <td>3</td>
+      <td>68</td>
+      <td>36</td>
+      <td>+32</td>
+      <td>81</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+      <td>38</td>
+      <td>20</td>
+      <td>11</td>
+      <td>7</td>
+      <td>65</td>
+      <td>36</td>
+      <td>+29</td>
+      <td>71</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>13</td>
+      <td>6</td>
+      <td>69</td>
+      <td>35</td>
+      <td>+34</td>
+      <td>70</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr class="is-selected">
+      <th>4</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>9</td>
+      <td>10</td>
+      <td>71</td>
+      <td>41</td>
+      <td>+30</td>
+      <td>66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester United</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>9</td>
+      <td>10</td>
+      <td>49</td>
+      <td>35</td>
+      <td>+14</td>
+      <td>66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton</a></td>
+      <td>38</td>
+      <td>18</td>
+      <td>9</td>
+      <td>11</td>
+      <td>59</td>
+      <td>41</td>
+      <td>+18</td>
+      <td>63</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham United</a></td>
+      <td>38</td>
+      <td>16</td>
+      <td>14</td>
+      <td>8</td>
+      <td>65</td>
+      <td>51</td>
+      <td>+14</td>
+      <td>62</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round" title="2016–17 UEFA Europa League">Europa League third qualifying round</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool</a></td>
+      <td>38</td>
+      <td>16</td>
+      <td>12</td>
+      <td>10</td>
+      <td>63</td>
+      <td>50</td>
+      <td>+13</td>
+      <td>60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City</a></td>
+      <td>38</td>
+      <td>14</td>
+      <td>9</td>
+      <td>15</td>
+      <td>41</td>
+      <td>55</td>
+      <td>−14</td>
+      <td>51</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea</a></td>
+      <td>38</td>
+      <td>12</td>
+      <td>14</td>
+      <td>12</td>
+      <td>59</td>
+      <td>53</td>
+      <td>+6</td>
+      <td>50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="https://en.wikipedia.org/wiki/Everton_F.C." title="Everton F.C.">Everton</a></td>
+      <td>38</td>
+      <td>11</td>
+      <td>14</td>
+      <td>13</td>
+      <td>59</td>
+      <td>55</td>
+      <td>+4</td>
+      <td>47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://en.wikipedia.org/wiki/Swansea_City_A.F.C." title="Swansea City A.F.C.">Swansea City</a></td>
+      <td>38</td>
+      <td>12</td>
+      <td>11</td>
+      <td>15</td>
+      <td>42</td>
+      <td>52</td>
+      <td>−10</td>
+      <td>47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="https://en.wikipedia.org/wiki/Watford_F.C." title="Watford F.C.">Watford</a></td>
+      <td>38</td>
+      <td>12</td>
+      <td>9</td>
+      <td>17</td>
+      <td>40</td>
+      <td>50</td>
+      <td>−10</td>
+      <td>45</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href="https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C." title="West Bromwich Albion F.C.">West Bromwich Albion</a></td>
+      <td>38</td>
+      <td>10</td>
+      <td>13</td>
+      <td>15</td>
+      <td>34</td>
+      <td>48</td>
+      <td>−14</td>
+      <td>43</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="https://en.wikipedia.org/wiki/Crystal_Palace_F.C." title="Crystal Palace F.C.">Crystal Palace</a></td>
+      <td>38</td>
+      <td>11</td>
+      <td>9</td>
+      <td>18</td>
+      <td>39</td>
+      <td>51</td>
+      <td>−12</td>
+      <td>42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="https://en.wikipedia.org/wiki/A.F.C._Bournemouth" title="A.F.C. Bournemouth">AFC Bournemouth</a></td>
+      <td>38</td>
+      <td>11</td>
+      <td>9</td>
+      <td>18</td>
+      <td>45</td>
+      <td>67</td>
+      <td>−22</td>
+      <td>42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href="https://en.wikipedia.org/wiki/Sunderland_A.F.C." title="Sunderland A.F.C.">Sunderland</a></td>
+      <td>38</td>
+      <td>9</td>
+      <td>12</td>
+      <td>17</td>
+      <td>48</td>
+      <td>62</td>
+      <td>−14</td>
+      <td>39</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://en.wikipedia.org/wiki/Newcastle_United_F.C." title="Newcastle United F.C.">Newcastle United</a> <strong>(R)</strong>
+      </td>
+      <td>38</td>
+      <td>9</td>
+      <td>10</td>
+      <td>19</td>
+      <td>44</td>
+      <td>65</td>
+      <td>−21</td>
+      <td>37</td>
+      <td>Relegation to the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship" title="2016–17 Football League Championship">Football League Championship</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="https://en.wikipedia.org/wiki/Norwich_City_F.C." title="Norwich City F.C.">Norwich City</a> <strong>(R)</strong>
+      </td>
+      <td>38</td>
+      <td>9</td>
+      <td>7</td>
+      <td>22</td>
+      <td>39</td>
+      <td>67</td>
+      <td>−28</td>
+      <td>34</td>
+      <td>Relegation to the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship" title="2016–17 Football League Championship">Football League Championship</a></td>    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="https://en.wikipedia.org/wiki/Aston_Villa_F.C." title="Aston Villa F.C.">Aston Villa</a> <strong>(R)</strong>
+      </td>
+      <td>38</td>
+      <td>3</td>
+      <td>8</td>
+      <td>27</td>
+      <td>27</td>
+      <td>76</td>
+      <td>−49</td>
+      <td>17</td>
+      <td>Relegation to the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship" title="2016–17 Football League Championship">Football League Championship</a></td>
+    </tr>
+  </tbody>
+</table>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Position"</span><span class="nt">&gt;</span>Pos<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Team<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Played"</span><span class="nt">&gt;</span>Pld<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Won"</span><span class="nt">&gt;</span>W<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Drawn"</span><span class="nt">&gt;</span>D<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Lost"</span><span class="nt">&gt;</span>L<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Goals for"</span><span class="nt">&gt;</span>GF<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Goals against"</span><span class="nt">&gt;</span>GA<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Goal difference"</span><span class="nt">&gt;</span>GD<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Points"</span><span class="nt">&gt;</span>Pts<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Qualification or relegation<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tfoot&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Position"</span><span class="nt">&gt;</span>Pos<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Team<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Played"</span><span class="nt">&gt;</span>Pld<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Won"</span><span class="nt">&gt;</span>W<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Drawn"</span><span class="nt">&gt;</span>D<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Lost"</span><span class="nt">&gt;</span>L<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Goals for"</span><span class="nt">&gt;</span>GF<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Goals against"</span><span class="nt">&gt;</span>GA<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Goal difference"</span><span class="nt">&gt;</span>GD<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"Points"</span><span class="nt">&gt;</span>Pts<span class="nt">&lt;/abbr&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Qualification or relegation<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tfoot&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Leicester_City_F.C."</span> <span class="na">title=</span><span class="s">"Leicester City F.C."</span><span class="nt">&gt;</span>Leicester City<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;strong&gt;</span>(C)<span class="nt">&lt;/strong&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>23<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>68<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>36<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+32<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>81<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Champions League"</span><span class="nt">&gt;</span>Champions League group stage<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Arsenal_F.C."</span> <span class="na">title=</span><span class="s">"Arsenal F.C."</span><span class="nt">&gt;</span>Arsenal<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>20<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>11<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>7<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>36<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+29<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>71<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Champions League"</span><span class="nt">&gt;</span>Champions League group stage<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C."</span> <span class="na">title=</span><span class="s">"Tottenham Hotspur F.C."</span><span class="nt">&gt;</span>Tottenham Hotspur<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>19<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>13<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>6<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>69<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>35<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+34<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>70<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Champions League"</span><span class="nt">&gt;</span>Champions League group stage<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"is-selected"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;th&gt;</span>4<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Manchester_City_F.C."</span> <span class="na">title=</span><span class="s">"Manchester City F.C."</span><span class="nt">&gt;</span>Manchester City<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>19<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>71<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+30<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>66<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Champions League"</span><span class="nt">&gt;</span>Champions League play-off round<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>5<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Manchester_United_F.C."</span> <span class="na">title=</span><span class="s">"Manchester United F.C."</span><span class="nt">&gt;</span>Manchester United<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>19<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>49<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>35<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>66<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Europa League"</span><span class="nt">&gt;</span>Europa League group stage<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>6<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Southampton_F.C."</span> <span class="na">title=</span><span class="s">"Southampton F.C."</span><span class="nt">&gt;</span>Southampton<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>18<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>11<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+18<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>63<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Europa League"</span><span class="nt">&gt;</span>Europa League group stage<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>7<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/West_Ham_United_F.C."</span> <span class="na">title=</span><span class="s">"West Ham United F.C."</span><span class="nt">&gt;</span>West Ham United<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>16<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>8<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>62<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Qualification for the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round"</span> <span class="na">title=</span><span class="s">"2016–17 UEFA Europa League"</span><span class="nt">&gt;</span>Europa League third qualifying round<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>8<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Liverpool_F.C."</span> <span class="na">title=</span><span class="s">"Liverpool F.C."</span><span class="nt">&gt;</span>Liverpool<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>16<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>63<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>50<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+13<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>60<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>9<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Stoke_City_F.C."</span> <span class="na">title=</span><span class="s">"Stoke City F.C."</span><span class="nt">&gt;</span>Stoke City<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>15<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>55<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>10<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Chelsea_F.C."</span> <span class="na">title=</span><span class="s">"Chelsea F.C."</span><span class="nt">&gt;</span>Chelsea<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>53<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+6<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>50<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>11<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Everton_F.C."</span> <span class="na">title=</span><span class="s">"Everton F.C."</span><span class="nt">&gt;</span>Everton<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>11<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>13<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>55<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>+4<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>12<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Swansea_City_A.F.C."</span> <span class="na">title=</span><span class="s">"Swansea City A.F.C."</span><span class="nt">&gt;</span>Swansea City<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>11<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>15<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>42<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>52<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>13<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Watford_F.C."</span> <span class="na">title=</span><span class="s">"Watford F.C."</span><span class="nt">&gt;</span>Watford<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>17<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>40<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>50<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>45<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>14<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C."</span> <span class="na">title=</span><span class="s">"West Bromwich Albion F.C."</span><span class="nt">&gt;</span>West Bromwich Albion<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>13<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>15<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>34<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>48<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>43<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>15<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Crystal_Palace_F.C."</span> <span class="na">title=</span><span class="s">"Crystal Palace F.C."</span><span class="nt">&gt;</span>Crystal Palace<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>11<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>18<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>39<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>42<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>16<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/A.F.C._Bournemouth"</span> <span class="na">title=</span><span class="s">"A.F.C. Bournemouth"</span><span class="nt">&gt;</span>AFC Bournemouth<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>11<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>18<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>45<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>67<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−22<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>42<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>17<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Sunderland_A.F.C."</span> <span class="na">title=</span><span class="s">"Sunderland A.F.C."</span><span class="nt">&gt;</span>Sunderland<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>17<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>48<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>62<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−14<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>39<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>18<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Newcastle_United_F.C."</span> <span class="na">title=</span><span class="s">"Newcastle United F.C."</span><span class="nt">&gt;</span>Newcastle United<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;strong&gt;</span>(R)<span class="nt">&lt;/strong&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>10<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>19<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>44<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−21<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Relegation to the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"</span> <span class="na">title=</span><span class="s">"2016–17 Football League Championship"</span><span class="nt">&gt;</span>Football League Championship<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>19<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Norwich_City_F.C."</span> <span class="na">title=</span><span class="s">"Norwich City F.C."</span><span class="nt">&gt;</span>Norwich City<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;strong&gt;</span>(R)<span class="nt">&lt;/strong&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>7<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>39<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>67<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−28<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>34<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Relegation to the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"</span> <span class="na">title=</span><span class="s">"2016–17 Football League Championship"</span><span class="nt">&gt;</span>Football League Championship<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>20<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Aston_Villa_F.C."</span> <span class="na">title=</span><span class="s">"Aston Villa F.C."</span><span class="nt">&gt;</span>Aston Villa<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;strong&gt;</span>(R)<span class="nt">&lt;/strong&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>3<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>8<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>27<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>27<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>76<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>−49<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>17<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Relegation to the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"</span> <span class="na">title=</span><span class="s">"2016–17 Football League Championship"</span><span class="nt">&gt;</span>Football League Championship<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-tags">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Tags
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <span class="tag is-black">Black</span>
+<span class="tag is-dark">Dark</span>
+<span class="tag is-light">Light</span>
+<span class="tag is-white">White</span>
+<span class="tag is-primary">Primary</span>
+<span class="tag is-link">Link</span>
+<span class="tag is-info">Info</span>
+<span class="tag is-success">Success</span>
+<span class="tag is-warning">Warning</span>
+<span class="tag is-danger">Danger</span>
+
+<hr>
+
+<span class="tag is-primary is-medium">Medium</span>
+<span class="tag is-info is-large">Large</span>
+<span class="tag is-rounded">Rounded</span>
+<a class="tag is-delete"></a>
+<span class="tag is-success">
+  Bar
+  <button class="delete is-small"></button>
+</span>
+<span class="tag is-warning is-medium">
+  Hello
+  <button class="delete is-small"></button>
+</span>
+<span class="tag is-danger is-large">
+  World
+  <button class="delete"></button>
+</span>
+<div class="tags has-addons">
+  <span class="tag is-danger">Alex Smith</span>
+  <a class="tag is-delete"></a>
+</div>
+
+
+
+<hr>
+
+<div class="tags">
+  <span class="tag">One</span>
+  <span class="tag">Two</span>
+  <span class="tag">Three</span>
+  <span class="tag">Four</span>
+  <span class="tag">Five</span>
+  <span class="tag">Six</span>
+  <span class="tag">Seven</span>
+  <span class="tag">Eight</span>
+  <span class="tag">Nine</span>
+  <span class="tag">Ten</span>
+  <span class="tag">Eleven</span>
+  <span class="tag">Twelve</span>
+  <span class="tag">Thirteen</span>
+  <span class="tag">Fourteen</span>
+  <span class="tag">Fifteen</span>
+  <span class="tag">Sixteen</span>
+  <span class="tag">Seventeen</span>
+  <span class="tag">Eighteen</span>
+  <span class="tag">Nineteen</span>
+  <span class="tag">Twenty</span>
+</div>
+
+<hr>
+
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag is-dark">npm</span>
+      <span class="tag is-info">0.5.0</span>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag is-dark">build</span>
+      <span class="tag is-success">passing</span>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag is-dark">chat</span>
+      <span class="tag is-primary">on gitter</span>
+    </div>
+  </div>
+</div>
+
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-black"</span><span class="nt">&gt;</span>Black<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-white"</span><span class="nt">&gt;</span>White<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-primary is-medium"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-info is-large"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tag is-delete"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-success"</span><span class="nt">&gt;</span>
+  Bar
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-small"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-warning is-medium"</span><span class="nt">&gt;</span>
+  Hello
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-small"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-danger is-large"</span><span class="nt">&gt;</span>
+  World
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tags has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-danger"</span><span class="nt">&gt;</span>Alex Smith<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tag is-delete"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tags"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Five<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Six<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Seven<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Eight<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Nine<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Ten<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Eleven<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Twelve<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Thirteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Fourteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Fifteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Sixteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Seventeen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Eighteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Nineteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag"</span><span class="nt">&gt;</span>Twenty<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field is-grouped is-grouped-multiline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tags has-addons"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-dark"</span><span class="nt">&gt;</span>npm<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-info"</span><span class="nt">&gt;</span>0.5.0<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tags has-addons"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-dark"</span><span class="nt">&gt;</span>build<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-success"</span><span class="nt">&gt;</span>passing<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tags has-addons"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-dark"</span><span class="nt">&gt;</span>chat<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tag is-primary"</span><span class="nt">&gt;</span>on gitter<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-titles">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Titles
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <h1 class="title is-1">Title 1</h1>
+<h2 class="title is-2">Title 2</h2>
+<h3 class="title is-3">Title 3 (default)</h3>
+<h4 class="title is-4">Title 4</h4>
+<h5 class="title is-5">Title 5</h5>
+<h6 class="title is-6">Title 6</h6>
+
+<hr>
+
+<h1 class="subtitle is-1">Subtitle 1</h1>
+<h2 class="subtitle is-2">Subtitle 2</h2>
+<h3 class="subtitle is-3">Subtitle 3</h3>
+<h4 class="subtitle is-4">Subtitle 4</h4>
+<h5 class="subtitle is-5">Subtitle 5 (default)</h5>
+<h6 class="subtitle is-6">Subtitle 6</h6>
+
+<hr>
+
+<div class="column">
+  <div class="block">
+    <p class="title is-1">Title 1</p>
+    <p class="subtitle is-3">Subtitle 3</p>
+  </div>
+  <div class="block">
+    <p class="title is-2">Title 2</p>
+    <p class="subtitle is-4">Subtitle 4</p>
+  </div>
+  <div class="block">
+    <p class="title is-3">Title 3</p>
+    <p class="subtitle is-5">Subtitle 5</p>
+  </div>
+</div>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title is-1"</span><span class="nt">&gt;</span>Title 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"title is-2"</span><span class="nt">&gt;</span>Title 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"title is-3"</span><span class="nt">&gt;</span>Title 3 (default)<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"title is-4"</span><span class="nt">&gt;</span>Title 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"title is-5"</span><span class="nt">&gt;</span>Title 5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"title is-6"</span><span class="nt">&gt;</span>Title 6<span class="nt">&lt;/h6&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"subtitle is-1"</span><span class="nt">&gt;</span>Subtitle 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"subtitle is-2"</span><span class="nt">&gt;</span>Subtitle 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"subtitle is-3"</span><span class="nt">&gt;</span>Subtitle 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"subtitle is-4"</span><span class="nt">&gt;</span>Subtitle 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"subtitle is-5"</span><span class="nt">&gt;</span>Subtitle 5 (default)<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"subtitle is-6"</span><span class="nt">&gt;</span>Subtitle 6<span class="nt">&lt;/h6&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title is-1"</span><span class="nt">&gt;</span>Title 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-3"</span><span class="nt">&gt;</span>Subtitle 3<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title is-2"</span><span class="nt">&gt;</span>Title 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-4"</span><span class="nt">&gt;</span>Subtitle 4<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title is-3"</span><span class="nt">&gt;</span>Title 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-5"</span><span class="nt">&gt;</span>Subtitle 5<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      </div>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="/patternlibrary/javascripts/mpl/application.js"></script>
+</body>
+</html>

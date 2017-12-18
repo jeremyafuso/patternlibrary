@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>Pattern Library | Content</title>
+  <link href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="/patternlibrary/stylesheets/mpl/application.css" rel="stylesheet" />
+  <link href="/patternlibrary/images/images/favicon.png" rel="icon" type="image/png" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+              mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Content</span>
+      </div>
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#tab-container"
+           class="mdl-layout__tab is-active">
+          Container
+        </a>
+        <a href="#tab-footer"
+           class="mdl-layout__tab">
+          Footer
+        </a>
+        <a href="#tab-hero"
+           class="mdl-layout__tab">
+          Hero
+        </a>
+        <a href="#tab-level"
+           class="mdl-layout__tab">
+          Level
+        </a>
+        <a href="#tab-media-object"
+           class="mdl-layout__tab">
+          Media Object
+        </a>
+        <a href="#tab-tiles"
+           class="mdl-layout__tab">
+          Tiles
+        </a>
+    </div>
+
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <span class="mdl-navigation__link mpl-navigation__title">
+          Introduction
+        </span>
+        <a href="/patternlibrary/" class="mdl-navigation__link">Overview</a>
+        <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Components
+          </span>
+            <a href="/patternlibrary/patterns/components/cards.html" class="mdl-navigation__link" data-title="Cards">Cards</a>
+            <a href="/patternlibrary/patterns/components/elements.html" class="mdl-navigation__link" data-title="Elements">Elements</a>
+            <a href="/patternlibrary/patterns/components/forms.html" class="mdl-navigation__link" data-title="Forms">Forms</a>
+            <a href="/patternlibrary/patterns/components/typography.html" class="mdl-navigation__link" data-title="Typography">Typography</a>
+            <div class="mpl-navigation__separator"></div>
+          <span class="mdl-navigation__link mpl-navigation__title">
+            Layout
+          </span>
+            <a href="/patternlibrary/patterns/layout/columns.html" class="mdl-navigation__link" data-title="Columns">Columns</a>
+            <a href="/patternlibrary/patterns/layout/content.html" class="mdl-navigation__link" data-title="Content">Content</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="mpl-layout__content">
+        
+  <section class="mdl-layout__tab-panel is-active"
+           id="tab-container">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Container
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            A simple container to center your content horizontally.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <br>
+<div style="background-color:black;">
+<br>
+  <div class="container">
+    <div class="notification">
+      This container is <strong>centered</strong> on desktop.
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container is-fluid">
+    <div class="notification">
+      This container is <strong>fluid</strong>: it will have a 32px gap on either side, on any
+      viewport size.
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container is-widescreen">
+    <div class="notification">
+      This container is <strong>fullwidth</strong> <em>until</em> the <code>$widescreen</code> breakpoint.
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container is-fullhd">
+    <div class="notification">
+      This container is <strong>fullwidth</strong> <em>until</em> the <code>$fullhd</code> breakpoint.
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color:black;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      This container is <span class="nt">&lt;strong&gt;</span>centered<span class="nt">&lt;/strong&gt;</span> on desktop.
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;br&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container is-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      This container is <span class="nt">&lt;strong&gt;</span>fluid<span class="nt">&lt;/strong&gt;</span>: it will have a 32px gap on either side, on any
+      viewport size.
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;br&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container is-widescreen"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      This container is <span class="nt">&lt;strong&gt;</span>fullwidth<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;em&gt;</span>until<span class="nt">&lt;/em&gt;</span> the <span class="nt">&lt;code&gt;</span>$widescreen<span class="nt">&lt;/code&gt;</span> breakpoint.
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;br&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container is-fullhd"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      This container is <span class="nt">&lt;strong&gt;</span>fullwidth<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;em&gt;</span>until<span class="nt">&lt;/em&gt;</span> the <span class="nt">&lt;code&gt;</span>$fullhd<span class="nt">&lt;/code&gt;</span> breakpoint.
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-footer">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Footer
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"footer"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content has-text-centered"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;strong&gt;</span>Bulma<span class="nt">&lt;/strong&gt;</span> by <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://jgthms.com"</span><span class="nt">&gt;</span>Jeremy Thomas<span class="nt">&lt;/a&gt;</span>. The source code is licensed
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://opensource.org/licenses/mit-license.php"</span><span class="nt">&gt;</span>MIT<span class="nt">&lt;/a&gt;</span>. The website content
+        is licensed <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://creativecommons.org/licenses/by-nc-sa/4.0/"</span><span class="nt">&gt;</span>CC BY NC SA 4.0<span class="nt">&lt;/a&gt;</span>.
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/footer&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-hero">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Hero
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            An imposing hero banner to showcase something.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Primary title
+      </h1>
+      <h2 class="subtitle">
+        Primary subtitle
+      </h2>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Primary bold title
+      </h1>
+      <h2 class="subtitle">
+        Primary bold subtitle
+      </h2>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="hero is-info is-large">
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        Title
+      </p>
+      <p class="subtitle">
+        Subtitle
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li class="is-active">
+            <a>Overview</a>
+          </li>
+          <li>
+            <a>Modifiers</a>
+          </li>
+          <li>
+            <a>Grid</a>
+          </li>
+          <li>
+            <a>Elements</a>
+          </li>
+          <li>
+            <a>Components</a>
+          </li>
+          <li>
+            <a>Layout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"hero is-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hero-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+        Primary title
+      <span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>
+        Primary subtitle
+      <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"hero is-medium is-primary is-bold"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hero-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+        Primary bold title
+      <span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>
+        Primary bold subtitle
+      <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"hero is-info is-large"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hero-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container has-text-centered"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+        Title
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>
+        Subtitle
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hero-foot"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"tabs is-boxed is-fullwidth"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"is-active"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a&gt;</span>Overview<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a&gt;</span>Modifiers<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a&gt;</span>Grid<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a&gt;</span>Elements<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a&gt;</span>Components<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a&gt;</span>Layout<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-level">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Level
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            A multi-purpose horizontal level, which can contain almost any other element.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <!-- In a level-item, you can then insert almost anything you want: a title, a button, a text input, or just simple text. No matter what elements you put inside a Bulma level, they will always be vertically centered. -->
+<!-- Main container -->
+<nav class="level notification">
+  <!-- Left side -->
+  <div class="level-left">
+    <div class="level-item">
+      <p class="subtitle is-5">
+        <strong>123</strong> posts
+      </p>
+    </div>
+    <div class="level-item">
+      <div class="field has-addons">
+        <p class="control">
+          <input class="input" type="text" placeholder="Find a post">
+        </p>
+        <p class="control">
+          <button class="button">
+            Search
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side -->
+  <div class="level-right">
+    <p class="level-item"><strong>All</strong></p>
+    <p class="level-item"><a>Published</a></p>
+    <p class="level-item"><a>Drafts</a></p>
+    <p class="level-item"><a>Deleted</a></p>
+    <p class="level-item"><a class="button is-success">New</a></p>
+  </div>
+</nav>
+
+<hr>
+
+<!-- CENTERED LEVEL. If you want a centered level, you can use as many level-item as you want, as long as they are direct children of the level container. -->
+<nav class="level notification">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Tweets</p>
+      <p class="title">3,456</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Following</p>
+      <p class="title">123</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Followers</p>
+      <p class="title">456K</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Likes</p>
+      <p class="title">789</p>
+    </div>
+  </div>
+</nav>
+
+<hr>
+
+<!-- MOBILE LEVEL. By default, for space concerns, the level is vertical on mobile. If you want the level to be horizontal on mobile as well, add the is-mobile modifier on the level container. -->
+<nav class="level notification">
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Home</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Menu</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <img src="https://bulma.io/images/bulma-type.png" alt="" style="height: 30px;">
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Reservations</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Contact</a>
+  </p>
+</nav>
+
+<hr>
+
+<nav class="level is-mobile notification">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Tweets</p>
+      <p class="title">3,456</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Following</p>
+      <p class="title">123</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Followers</p>
+      <p class="title">456K</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Likes</p>
+      <p class="title">789</p>
+    </div>
+  </div>
+</nav>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="c">&lt;!-- In a level-item, you can then insert almost anything you want: a title, a button, a text input, or just simple text. No matter what elements you put inside a Bulma level, they will always be vertically centered. --&gt;</span>
+<span class="c">&lt;!-- Main container --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"level notification"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Left side --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-5"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;strong&gt;</span>123<span class="nt">&lt;/strong&gt;</span> posts
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field has-addons"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Find a post"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+            Search
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Right side --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;&lt;strong&gt;</span>All<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;&lt;a&gt;</span>Published<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;&lt;a&gt;</span>Drafts<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;&lt;a&gt;</span>Deleted<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"button is-success"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="c">&lt;!-- CENTERED LEVEL. If you want a centered level, you can use as many level-item as you want, as long as they are direct children of the level container. --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"level notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Tweets<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>3,456<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Following<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>123<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Followers<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>456K<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Likes<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>789<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="c">&lt;!-- MOBILE LEVEL. By default, for space concerns, the level is vertical on mobile. If you want the level to be horizontal on mobile as well, add the is-mobile modifier on the level container. --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"level notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"link is-info"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"link is-info"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/bulma-type.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"height: 30px;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"link is-info"</span><span class="nt">&gt;</span>Reservations<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"link is-info"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"level is-mobile notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Tweets<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>3,456<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Following<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>123<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Followers<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>456K<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item has-text-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Likes<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>789<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-media-object">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Media Object
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            The media object is a UI element perfect for repeatable and nestable content.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <article class="media notification">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          <span class="icon is-small"><i class="fa fa-reply"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fa fa-retweet"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fa fa-heart"></i></span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="media-right">
+    <button class="delete"></button>
+  </div>
+</article>
+
+<hr>
+
+<article class="media notification">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="field">
+      <p class="control">
+        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+      </p>
+    </div>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <a class="button is-info">Submit</a>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item">
+          <label class="checkbox">
+            <input type="checkbox"> Press enter to submit
+          </label>
+        </div>
+      </div>
+    </nav>
+  </div>
+</article>
+
+<hr>
+
+<article class="media notification">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Barbara Middleton</strong>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+        <br>
+        <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+      </p>
+    </div>
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Sean Brown</strong>
+            <br>
+            Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+          </p>
+        </div>
+
+        <article class="media">
+          Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+        </article>
+
+        <article class="media">
+          Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+        </article>
+      </div>
+    </article>
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Kayli Eunice </strong>
+            <br>
+            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</article>
+<article class="media notification">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="field">
+      <p class="control">
+        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control">
+        <button class="button">Post comment</button>
+      </p>
+    </div>
+  </div>
+</article>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image is-64x64"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/128x128.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;strong&gt;</span>John Smith<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;small&gt;</span>@johnsmith<span class="nt">&lt;/small&gt;</span> <span class="nt">&lt;small&gt;</span>31m<span class="nt">&lt;/small&gt;</span>
+        <span class="nt">&lt;br&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"level is-mobile"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-reply"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-retweet"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-heart"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image is-64x64"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/128x128.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"textarea"</span> <span class="na">placeholder=</span><span class="s">"Add a comment..."</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"level"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-right"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"level-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Press enter to submit
+          <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image is-64x64"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/128x128.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;strong&gt;</span>Barbara Middleton<span class="nt">&lt;/strong&gt;</span>
+        <span class="nt">&lt;br&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+        <span class="nt">&lt;br&gt;</span>
+        <span class="nt">&lt;small&gt;&lt;a&gt;</span>Like<span class="nt">&lt;/a&gt;</span> · <span class="nt">&lt;a&gt;</span>Reply<span class="nt">&lt;/a&gt;</span> · 3 hrs<span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image is-48x48"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/96x96.png"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/figure&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>
+            <span class="nt">&lt;strong&gt;</span>Sean Brown<span class="nt">&lt;/strong&gt;</span>
+            <span class="nt">&lt;br&gt;</span>
+            Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+            <span class="nt">&lt;br&gt;</span>
+            <span class="nt">&lt;small&gt;&lt;a&gt;</span>Like<span class="nt">&lt;/a&gt;</span> · <span class="nt">&lt;a&gt;</span>Reply<span class="nt">&lt;/a&gt;</span> · 2 hrs<span class="nt">&lt;/small&gt;</span>
+          <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+          Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+        <span class="nt">&lt;/article&gt;</span>
+
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+          Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+        <span class="nt">&lt;/article&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image is-48x48"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/96x96.png"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/figure&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>
+            <span class="nt">&lt;strong&gt;</span>Kayli Eunice <span class="nt">&lt;/strong&gt;</span>
+            <span class="nt">&lt;br&gt;</span>
+            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+            <span class="nt">&lt;br&gt;</span>
+            <span class="nt">&lt;small&gt;&lt;a&gt;</span>Like<span class="nt">&lt;/a&gt;</span> · <span class="nt">&lt;a&gt;</span>Reply<span class="nt">&lt;/a&gt;</span> · 2 hrs<span class="nt">&lt;/small&gt;</span>
+          <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"media notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image is-64x64"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/128x128.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"textarea"</span> <span class="na">placeholder=</span><span class="s">"Add a comment..."</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Post comment<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-tiles">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Tiles
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            A single tile element to build 2-dimensional Metro-like, Pinterest-like, or whatever-you-like grids.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <p class="title">Vertical...</p>
+          <p class="subtitle">Top tile</p>
+        </article>
+        <article class="tile is-child notification is-warning">
+          <p class="title">...tiles</p>
+          <p class="subtitle">Bottom tile</p>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Middle tile</p>
+          <p class="subtitle">With an image</p>
+          <figure class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/640x480.png">
+          </figure>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Wide tile</p>
+        <p class="subtitle">Aligned with the right tile</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Tall tile</p>
+        <p class="subtitle">With even more content</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile is-ancestor"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile is-vertical is-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile is-parent is-vertical"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"tile is-child notification is-primary"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Vertical...<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>Top tile<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"tile is-child notification is-warning"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>...tiles<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>Bottom tile<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile is-parent"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"tile is-child notification is-info"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Middle tile<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>With an image<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"image is-4by3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/placeholders/640x480.png"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/figure&gt;</span>
+        <span class="nt">&lt;/article&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile is-parent"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"tile is-child notification is-danger"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Wide tile<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>Aligned with the right tile<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+          <span class="c">&lt;!-- Content --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile is-parent"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"tile is-child notification is-success"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Tall tile<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>With even more content<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+          <span class="c">&lt;!-- Content --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      </div>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="/patternlibrary/javascripts/mpl/application.js"></script>
+</body>
+</html>
