@@ -88,6 +88,7 @@ end
 
 # Build-specific configuration
 configure :build do
+  set :http_prefix, "/patternlibrary"
   # Minify CSS on build
   # activate :minify_css
 
