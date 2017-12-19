@@ -3,22 +3,22 @@
 @import "sass/utilities/functions";
 
 // 2. Set your own initial variables
-// Update blue
-$blue: #72d0eb;
-// Add pink and its invert
-$pink: #ffb3b3;
-$pink-invert: #fff;
-// Add a serif family
-$family-serif: "Merriweather", "Georgia", serif;
+// $black: $black;
+$dark-grey: $black-ter;
+$dark-grey-invert: findColorInvert($dark-grey);
+$mid-grey: $grey-dark;
+$mid-grey-invert: findColorInvert($mid-grey);
+$light-grey: $grey-lighter;
+$light-grey-invert: findColorInvert($light-grey);
+$bg-grey: $white-bis;
+$bg-grey-invert: findColorInvert($bg-grey);
+// $white: $white;
 
 // 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
+
 // Use the existing orange as the danger color
 $danger: $orange;
 // Use the new serif family
-$family-primary: $family-serif;
 
 // 4. Setup your Custom Colors
 $linkedin: #0077b5;
@@ -33,8 +33,12 @@ $github-invert: findColorInvert($github);
 $addColors: (
   "twitter":($twitter, $twitter-invert),
   "linkedin": ($linkedin, $linkedin-invert),
+  "dark-grey": ($dark-grey, $dark-grey-invert),
+  "mid-grey": ($mid-grey, $mid-grey-invert),
+  "light-grey": ($light-grey, $light-grey-invert),
+  "bg-grey": ($bg-grey, $bg-grey-invert),
   "github": ($github, $github-invert)
-);
+  );
 $colors: map-merge($colors, $addColors);
 
 // 6. Import the rest of Bulma
