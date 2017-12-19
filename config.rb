@@ -29,9 +29,7 @@ collection :patterns, patterns
 ###
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
+  deploy.deploy_method = :git
 end
 
 # Per-page layout changes:
@@ -90,6 +88,7 @@ end
 
 # Build-specific configuration
 configure :build do
+  set :http_prefix, "/patternlibrary"
   # Minify CSS on build
   # activate :minify_css
 
