@@ -16,3 +16,4 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 # Markdown parser:
 gem 'redcarpet', '~> 3.4.0'
+gem 'bootstrap-sass'
