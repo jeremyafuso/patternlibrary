@@ -19,25 +19,25 @@
         <span class="mdl-layout-title">Typography</span>
       </div>
           <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-        <a href="#tab-blockquotes"
+        <a href="#tab-bulma-styles"
            class="mdl-layout__tab is-active">
-          Blockquotes
-        </a>
-        <a href="#tab-customizing-headings"
-           class="mdl-layout__tab">
-          Customizing headings
-        </a>
-        <a href="#tab-headings"
-           class="mdl-layout__tab">
-          Headings
+          Bulma Styles
         </a>
         <a href="#tab-inline-text-elements"
            class="mdl-layout__tab">
           Inline text elements
         </a>
-        <a href="#tab-lead"
+        <a href="#tab-my-spacing"
            class="mdl-layout__tab">
-          Lead
+          My Spacing
+        </a>
+        <a href="#tab-my-styles"
+           class="mdl-layout__tab">
+          My Styles
+        </a>
+        <a href="#tab-titles"
+           class="mdl-layout__tab">
+          Titles
         </a>
     </div>
 
@@ -52,9 +52,9 @@
           <span class="mdl-navigation__link mpl-navigation__title">
             Components
           </span>
+            <a href="/patternlibrary/patterns/components/blocks.html" class="mdl-navigation__link" data-title="Blocks">Blocks</a>
             <a href="/patternlibrary/patterns/components/cards.html" class="mdl-navigation__link" data-title="Cards">Cards</a>
             <a href="/patternlibrary/patterns/components/elements.html" class="mdl-navigation__link" data-title="Elements">Elements</a>
-            <a href="/patternlibrary/patterns/components/forms.html" class="mdl-navigation__link" data-title="Forms">Forms</a>
             <a href="/patternlibrary/patterns/components/typography.html" class="mdl-navigation__link" data-title="Typography">Typography</a>
             <div class="mpl-navigation__separator"></div>
           <span class="mdl-navigation__link mpl-navigation__title">
@@ -68,101 +68,39 @@
       <div class="mpl-layout__content">
         
   <section class="mdl-layout__tab-panel is-active"
-           id="tab-blockquotes">
+           id="tab-bulma-styles">
     <div class="page-content">
       <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title mdl-card--expand">
           <h2 class="mdl-card__title-text">
-            Blockquotes
+            Bulma Styles
           </h2>
         </div>
         <div class="mdl-card__supporting-text">
-            For quoting blocks of content from another source within your document.
-            <hr>
           <div class="mpl-layout__source">
               <div data-iframe>
-                <blockquote class="blockquote">
-  <p class="m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-</blockquote>
+                <div class="content notification">
+  <div class="is-size-1">3rem - Duis mollis, est non commodo luctus porttitor ligula.</div>
+  <div class="is-size-2">2.5rem - Duis mollis, est non commodo luctus porttitor ligula.</div>
+  <div class="is-size-3">2rem - Duis mollis, est non commodo luctus porttitor ligula.</div>
+  <div class="is-size-4">1.5rem - Duis mollis, est non commodo luctus porttitor ligula.</div>
+  <div class="is-size-5">1rem - Duis mollis, est non commodo luctus porttitor ligula.</div>
+  <div class="is-size-6">.75rem - Duis mollis, est non commodo luctus porttitor ligula.</div>
+</div>
 
                 <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
                 <script src="/patternlibrary/javascripts/base.js"></script>
               </div>
           </div>
             <hr>
-            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"m-b-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span>
-</code></pre></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="mdl-layout__tab-panel"
-           id="tab-customizing-headings">
-    <div class="page-content">
-      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand">
-          <h2 class="mdl-card__title-text">
-            Customizing headings
-          </h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-            Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.
-            <hr>
-          <div class="mpl-layout__source">
-              <div data-iframe>
-                <h3>
-  Fancy display heading
-  <small class="text-muted">With faded secondary text</small>
-</h3>
-
-                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
-                <script src="/patternlibrary/javascripts/base.js"></script>
-              </div>
-          </div>
-            <hr>
-            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;h3&gt;</span>
-  Fancy display heading
-  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>With faded secondary text<span class="nt">&lt;/small&gt;</span>
-<span class="nt">&lt;/h3&gt;</span>
-</code></pre></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="mdl-layout__tab-panel"
-           id="tab-headings">
-    <div class="page-content">
-      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand">
-          <h2 class="mdl-card__title-text">
-            Headings
-          </h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-            All HTML headings, &lt;h1&gt; through &lt;h6&gt;, are available. .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.
-            <hr>
-          <div class="mpl-layout__source">
-              <div data-iframe>
-                <h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
-                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
-                <script src="/patternlibrary/javascripts/base.js"></script>
-              </div>
-          </div>
-            <hr>
-            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;h1&gt;</span>Heading 1<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>Heading 2<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>Heading 3<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>Heading 4<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>Heading 5<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>Heading 6<span class="nt">&lt;/h6&gt;</span>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content notification"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-1"</span><span class="nt">&gt;</span>3rem - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-2"</span><span class="nt">&gt;</span>2.5rem - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-3"</span><span class="nt">&gt;</span>2rem - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-4"</span><span class="nt">&gt;</span>1.5rem - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-5"</span><span class="nt">&gt;</span>1rem - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"is-size-6"</span><span class="nt">&gt;</span>.75rem - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
         </div>
       </div>
@@ -210,31 +148,239 @@
     </div>
   </section>
   <section class="mdl-layout__tab-panel"
-           id="tab-lead">
+           id="tab-my-spacing">
     <div class="page-content">
       <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title mdl-card--expand">
           <h2 class="mdl-card__title-text">
-            Lead
+            My Spacing
           </h2>
         </div>
         <div class="mdl-card__supporting-text">
-            Make a paragraph stand out by adding .lead.
-            <hr>
           <div class="mpl-layout__source">
               <div data-iframe>
-                <p class="lead">
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-</p>
+                <div class="content notification">
+<h1 class="vspace1">vspace1 - Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h5>Est non commodo luctus porttitor ligula.</h5>
+<hr>
+<h1 class="vspace2">vspace2 - Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h5>Est non commodo luctus porttitor ligula.</h5>
+<hr>
+<h1 class="vspace3">vspace3 - Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h5>Est non commodo luctus porttitor ligula.</h5>
+<hr>
+<h1 class="vspace4">vspace4 - Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h5>Est non commodo luctus porttitor ligula.</h5>
+<hr>
+<h1 class="vspace5">vspace5 - Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h5>Est non commodo luctus porttitor ligula.</h5>
+<hr>
+
+</div>
+
+<div class="content notification">
+<p class="lheight1">lheight1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+<hr>
+<p class="lheight2">lheight2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+<hr>
+<p class="lheight3">lheight3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+<hr>
+<p class="lheight4">lheight4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+
+</div>
+
+<div class="content notification">
+<h1 class="spacing1 upper">Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h1 class="spacing2 upper">Duis mollis, est non commodo luctus porttitor ligula.</h1>
+
+</div>
 
                 <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
                 <script src="/patternlibrary/javascripts/base.js"></script>
               </div>
           </div>
             <hr>
-            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-<span class="nt">&lt;/p&gt;</span>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content notification"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"vspace1"</span><span class="nt">&gt;</span>vspace1 - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Est non commodo luctus porttitor ligula.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"vspace2"</span><span class="nt">&gt;</span>vspace2 - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Est non commodo luctus porttitor ligula.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"vspace3"</span><span class="nt">&gt;</span>vspace3 - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Est non commodo luctus porttitor ligula.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"vspace4"</span><span class="nt">&gt;</span>vspace4 - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Est non commodo luctus porttitor ligula.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"vspace5"</span><span class="nt">&gt;</span>vspace5 - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Est non commodo luctus porttitor ligula.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content notification"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lheight1"</span><span class="nt">&gt;</span>lheight1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lheight2"</span><span class="nt">&gt;</span>lheight2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lheight3"</span><span class="nt">&gt;</span>lheight3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lheight4"</span><span class="nt">&gt;</span>lheight4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content notification"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"spacing1 upper"</span><span class="nt">&gt;</span>Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"spacing2 upper"</span><span class="nt">&gt;</span>Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-my-styles">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            My Styles
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            My header and paragraph styles.
+            <hr>
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <div class="content notification">
+<h1>H1 / 44px - Duis mollis, est non commodo luctus porttitor ligula.</h1>
+<h2>H2 / 36 px - Duis mollis, est non commodo luctus porttitor ligula.</h2>
+<h3>H3 / 26px - Duis mollis, est non commodo luctus porttitor ligula.</h3>
+<h4>H4 / 20px - Duis mollis, est non commodo luctus porttitor ligula.</h4>
+<h5>H5 / 13px - Duis mollis, est non commodo luctus porttitor ligula.</h5>
+<h6>H6 / 11px - Duis mollis, est non commodo luctus porttitor ligula.</h6>
+<br>
+<p>P / 16px - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+<hr>
+
+<h3 class="light">Light - Duis mollis, est non commodo luctus porttitor ligula.</h3>
+<h3 class="regular">Regular - Duis mollis, est non commodo luctus porttitor ligula.</h3>
+<h3 class="bold">Bold - Duis mollis, est non commodo luctus porttitor ligula.</h3>
+<h3 class="black">Black - Duis mollis, est non commodo luctus porttitor ligula.</h3>
+
+</div>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content notification"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1&gt;</span>H1 / 44px - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>H2 / 36 px - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>H3 / 26px - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>H4 / 20px - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>H5 / 13px - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>H6 / 11px - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;p&gt;</span>P / 16px - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Light - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"regular"</span><span class="nt">&gt;</span>Regular - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Bold - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"black"</span><span class="nt">&gt;</span>Black - Duis mollis, est non commodo luctus porttitor ligula.<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdl-layout__tab-panel"
+           id="tab-titles">
+    <div class="page-content">
+      <div class="mpl-card-pattern mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">
+            Titles
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mpl-layout__source">
+              <div data-iframe>
+                <h1 class="title is-1">Title 1</h1>
+<h2 class="title is-2">Title 2</h2>
+<h3 class="title is-3">Title 3 (default)</h3>
+<h4 class="title is-4">Title 4</h4>
+<h5 class="title is-5">Title 5</h5>
+<h6 class="title is-6">Title 6</h6>
+
+<hr>
+
+<h1 class="subtitle is-1">Subtitle 1</h1>
+<h2 class="subtitle is-2">Subtitle 2</h2>
+<h3 class="subtitle is-3">Subtitle 3</h3>
+<h4 class="subtitle is-4">Subtitle 4</h4>
+<h5 class="subtitle is-5">Subtitle 5 (default)</h5>
+<h6 class="subtitle is-6">Subtitle 6</h6>
+
+<hr>
+
+<div class="column">
+  <div class="block">
+    <p class="title is-1">Title 1</p>
+    <p class="subtitle is-3">Subtitle 3</p>
+  </div>
+  <div class="block">
+    <p class="title is-2">Title 2</p>
+    <p class="subtitle is-4">Subtitle 4</p>
+  </div>
+  <div class="block">
+    <p class="title is-3">Title 3</p>
+    <p class="subtitle is-5">Subtitle 5</p>
+  </div>
+</div>
+
+                <link href="/patternlibrary/stylesheets/base.css" rel="stylesheet" />
+                <script src="/patternlibrary/javascripts/base.js"></script>
+              </div>
+          </div>
+            <hr>
+            <div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title is-1"</span><span class="nt">&gt;</span>Title 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"title is-2"</span><span class="nt">&gt;</span>Title 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"title is-3"</span><span class="nt">&gt;</span>Title 3 (default)<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"title is-4"</span><span class="nt">&gt;</span>Title 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"title is-5"</span><span class="nt">&gt;</span>Title 5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"title is-6"</span><span class="nt">&gt;</span>Title 6<span class="nt">&lt;/h6&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"subtitle is-1"</span><span class="nt">&gt;</span>Subtitle 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"subtitle is-2"</span><span class="nt">&gt;</span>Subtitle 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"subtitle is-3"</span><span class="nt">&gt;</span>Subtitle 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"subtitle is-4"</span><span class="nt">&gt;</span>Subtitle 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"subtitle is-5"</span><span class="nt">&gt;</span>Subtitle 5 (default)<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"subtitle is-6"</span><span class="nt">&gt;</span>Subtitle 6<span class="nt">&lt;/h6&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title is-1"</span><span class="nt">&gt;</span>Title 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-3"</span><span class="nt">&gt;</span>Subtitle 3<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title is-2"</span><span class="nt">&gt;</span>Title 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-4"</span><span class="nt">&gt;</span>Subtitle 4<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"title is-3"</span><span class="nt">&gt;</span>Title 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle is-5"</span><span class="nt">&gt;</span>Subtitle 5<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
         </div>
       </div>
